@@ -24,7 +24,7 @@
               <a class="nav-link" href="#">หน้าหลักของระบบ <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"></a>
+              <a class="nav-link" href="{{ route('faculty') }}">คณะ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>

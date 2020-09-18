@@ -19,7 +19,7 @@ class Mas_FacultyController extends Controller
         return view('faculty.index',[
             'faculty'=>$faculty,
         'count'=> $count
-        )];
+        ]);
     }
 
     /**
