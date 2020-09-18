@@ -13,8 +13,22 @@
                             {{ session('status') }}
                         </div>
                     @endif
+<!-- เขียนส่วนแสดงผล-->
+{{@count}}
+<table class="table table-bordered">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th width="280px">Action</th>
+        </tr>
+        @foreach ($faculty as $faculty)
+        <tr>
+            <td>{{$faculty->faculty_id}}</td>
+            <td>{{$faculty->faculty_name}}</td>
+        </tr>
+        @endforeach
+</table>
 
-           show faculty
                 </div>
             </div>
         </div>

@@ -14,12 +14,9 @@ class Mas_FacultyController extends Controller
      */
     public function index()
     {
-        $faculty=mas_faculty::all();
-        $count=Mas_faculty::count();
-        return view('faculty.index',[
-            'faculty'=>$faculty,
-        'count'=> $count
-        ]);
+        $faculty =Mas_Faculty::all();   //orderby('faculty_id')->get();
+        return view('faculty.index',compact('faculty'));
+        $faculty =Mas_faculty::paginate(5);
     }
 
     /**
