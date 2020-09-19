@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Mas_Program;
 use Illuminate\Http\Request;
-use App\Mas_faculty;
 
-class Mas_FacultyController extends Controller
+class Mas_ProgramController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +13,10 @@ class Mas_FacultyController extends Controller
      */
     public function index()
     {
-        $faculty =Mas_Faculty::all();   //orderby('faculty_id')->get();
+        $program =Mas_Program::orderBy('program_id');   //orderby('faculty_id')->get();
 
-        $faculty =Mas_faculty::paginate(5);
-        return view('faculty.index',compact('faculty'));
+        $program=Mas_Program::paginate(10);
+        return view('program.index',compact('program'));
     }
 
     /**

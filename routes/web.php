@@ -11,6 +11,9 @@
 |
 */
 
+use App\Http\Controllers\Mas_ProgramController;
+use App\Mas_Program;
+
 Route::get('/', function () {
    // return view('welcome');
    return view('main');
@@ -20,3 +23,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/faculty', 'Mas_FacultyController@index')->name('faculty');
+Route::get('/program','Mas_ProgramController@index')->name('program');

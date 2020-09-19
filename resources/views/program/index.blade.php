@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">รายชื่อคณะและศูนย์สำนัก</div>
+                <div class="card-header">รายชื่อสาขาวิชา</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -17,21 +17,21 @@
 
 <table class="table table-bordered">
     <tr>
-        <th>NO</th>
-        <th>คณะ</th>
+        <th>ลำดับที่</th>
+        <th>สาขาวิชา</th>
 
         </tr>
-        @foreach ($faculty as $fac)
+        @foreach ($program as $pro)
         <tr>
-            <td>{{$fac->faculty_id}}</td>
-            <td>{{$fac->faculty_name}}</td>
+            <td>{{$pro->program_id}}</td>
+            <td>{{$pro->program_name}}</td>
         </tr>
         @endforeach
 </table>
  {{-- Pagination --}}
  <div class="d-flex justify-content-center">
 
-</div>{!!$faculty->links()!!}
+</div>{!!$program->links()!!}
                 </div>
             </div>
         </div>
