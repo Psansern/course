@@ -177,7 +177,6 @@ CREATE TABLE `instructor` (
 --
 
 INSERT INTO `instructor` (`instructor_id`, `citizen_id`, `year`, `semester_id`, `faculty_id`, `title_id`, `stf_name`, `stf_lname`) VALUES
-('STRUCTOR_ID', 'CITIZEN_ID', 'YEAR', 'SEMESTER_ID', 'FACULTY_ID', 'TITLE_ID', 'STF_FNAME', 'STF_LNAME'),
 ('4', '5.4507E+12', '2551', '2', '2', '2', 'กนกวรรณ', 'เลื่อยคลัง'),
 ('5', '3.5601E+12', '2551', '2', '3', '2', 'กรรณิการ์', 'คันทมาศ'),
 ('6', '3.9002E+12', '2551', '2', '1', '1', 'เจริญ', 'แก้วประดิษฐ์'),
@@ -1257,8 +1256,7 @@ INSERT INTO `mas_department` (`department_id`, `department_code`, `department_na
 ('6', '120', 'คณิตศาสตร์', '', '2'),
 ('7', '153', 'ภาษาอังกฤษ', '', '2'),
 ('8', '171', 'สังคมศึกษา', '', '2'),
-('9', '161', 'วิทยาศาสตร์ทั่วไป', '', '2'),
-('PARTMENT_ID', 'DEPARTMENT_CODE', 'DEPARTMENT_NAME', 'DEPARTMENT_NAME_ENG', 'FACULTY_ID');
+('9', '161', 'วิทยาศาสตร์ทั่วไป', '', '2');
 
 -- --------------------------------------------------------
 
@@ -1278,7 +1276,6 @@ CREATE TABLE `mas_faculty` (
 --
 
 INSERT INTO `mas_faculty` (`faculty_id`, `faulty_code`, `ref_faculty_id`, `faculty_name`) VALUES
-('CULTY_ID', 'FACULTY_CODE', 'REF_FAC_ID', 'FACULTY_NAME'),
 ('1', 'sci', '83', 'คณะวิทยาศาสตร์และเทคโนโลยี'),
 ('2', 'edu', '11', 'คณะครุศาสตร์'),
 ('3', 'hum', '64', 'คณะมนุษยศาสตร์และสังคมศาสตร์'),
@@ -1318,7 +1315,6 @@ CREATE TABLE `mas_program` (
 --
 
 INSERT INTO `mas_program` (`program_id`, `faculty_id`, `cat_id`, `program_code`, `ref_program_id`, `ref_isced_id`, `program_name`, `program_name_eng`) VALUES
-('1', '5', '3', '24', '355', '5307', 'ก่อสร้าง', 'Construction'),
 ('10', '4', '4', '91', '2021', '3315', 'การบริหารธุรกิจ (การบริหารทรัพยากรมนุษย์)', 'Business Administration(Human Resource Management)'),
 ('100', '3', '2', '48', '475', '2104', 'ดนตรี (ดนตรีสากล)', 'Classical Music'),
 ('101', '1', '3', '12', '1165', '7100', 'สาธารณสุขชุมชน', 'Community Health'),
@@ -1539,8 +1535,7 @@ INSERT INTO `mas_program` (`program_id`, `faculty_id`, `cat_id`, `program_code`,
 ('96', '4', '2', '90', '2022', '3311', 'การบริหารธุรกิจ (การบัญชี)', 'Business Administration(Accounting)'),
 ('97', '4', '2', '93', '2024', '3300', 'การบริหารธุรกิจ (ธุรกิจบริการ)', 'Business Administration (Service Business)'),
 ('98', '3', '2', '2', '208', '2200', 'การพัฒนาชุมชน', 'Community Development'),
-('99', '2', '1', '16', '169', '1001', 'การศึกษาปฐมวัย', 'Early Childhood Education'),
-('OGRAM_ID', 'FACULTY_ID', 'CAT_ID', 'PROGRAM_CODE', 'REF_PROGRAM_ID', 'REF_ISCED_ID', 'PROGRAM_NAME', 'PROGRAM_NAME_ENG');
+('99', '2', '1', '16', '169', '1001', 'การศึกษาปฐมวัย', 'Early Childhood Education');
 
 -- --------------------------------------------------------
 
@@ -1669,8 +1664,7 @@ INSERT INTO `mas_title` (`title_id`, `title_name`, `title_name_eng`) VALUES
 ('96', 'Mr.', 'Mr.'),
 ('97', 'พระมหานาวาเอก', 'Ven.'),
 ('98', 'พันเอก', ''),
-('99', 'จ่าอากาศตรี', ''),
-('TLE_ID', 'TITLE_NAME', 'TITLE_NAME_ENG');
+('99', 'จ่าอากาศตรี', '');
 
 -- --------------------------------------------------------
 
