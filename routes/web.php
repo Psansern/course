@@ -24,3 +24,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/faculty', 'Mas_FacultyController@index')->name('faculty');
 Route::get('/program','Mas_ProgramController@index')->name('program');
+Route::get('/instructor','InstuctorCourseController@index')->name('instructor');
