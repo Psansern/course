@@ -24,7 +24,7 @@
         @foreach ($faculty as $fac)
         <tr>
             <td>{{$fac->faculty_id}}</td>
-            <td>{{$fac->faculty_name}}</td>
+            <td><a href=""></a>{{$fac->faculty_name}}</a></td>
         </tr>
         @endforeach
 </table>
